@@ -1,0 +1,2 @@
+# py36_shared_memory_shared_numpy
+python36 shared_memory shared_numpy
