@@ -30,3 +30,5 @@ a = shared_memory.ShareableList(['howdy', b'HoWdY', -273.154, 100, None, True, 4
 b = shared_memory.ShareableList(range(5))         # In a first process
 c = shared_memory.ShareableList(name=b.shm.name)  # In a second process
 ```
+
+###### reference https://github.com/dillonalaird/shared_numpy
