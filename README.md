@@ -12,7 +12,6 @@ a.close()
 a.unlink()
 del a
 ```
-================================
 
 ##### from process b
 ```python
