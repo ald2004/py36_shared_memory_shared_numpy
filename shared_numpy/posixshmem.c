@@ -5,6 +5,7 @@ posixshmem - A Python extension that provides shm_open() and shm_unlink()
 #define PY_SSIZE_T_CLEAN
 
 #include <Python.h>
+#include "structmember.h"
 
 // for shm_open() and shm_unlink()
 #ifdef HAVE_SYS_MMAN_H
@@ -101,7 +102,7 @@ _posixshmem_shm_unlink_impl(PyObject *module, PyObject *path)
 }
 #endif /* HAVE_SHM_UNLINK */
 
-#include "posixshmem.c.h"
+#include "clinic/posixshmem.c.h"
 
 static PyMethodDef module_methods[ ] = {
     _POSIXSHMEM_SHM_OPEN_METHODDEF

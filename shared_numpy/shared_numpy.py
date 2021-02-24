@@ -1,4 +1,4 @@
-from shared_memory import SharedMemory
+from shared_numpy.shared_memory import SharedMemory
 import numpy as np
 
 
